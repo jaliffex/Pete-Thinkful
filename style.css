@@ -58,6 +58,8 @@ hr {
 /* Add your solution below */
 
 .image-circle{
+  height: 640px;
+  width: 640px;
   border-radius: 50%;
   overflow: hidden;
 }

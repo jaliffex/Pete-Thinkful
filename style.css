@@ -58,7 +58,8 @@ hr {
 /* Add your solution below */
 
 .image-circle {
-  border-radius: 50%;
+  border-radius: 50%
+  overflow: hidden;
 }
 
 footer {

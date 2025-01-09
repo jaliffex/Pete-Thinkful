@@ -1,75 +1,109 @@
-/* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
+<!DOCTYPE html>
+<html lang="en">
 
-body {
-  background-color: #eae2b7;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pete Thinkful</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-header {
-text-align: center;
-}
+<body>
+  <!-- TODO: Add header here -->
 
-/* Set the font family for any h1, h2, or h3 heading */
-h1,
-h2,
-h3 {
-  font-family: "Playfair Display", Times, serif;
-}
+    <h1 align="center">Pete Thinkful | Artist</h1>
+  
+  <header>
+    <nav><a href="">About</a>
+      <a href="">Portfolio</a>
+      <a href="">Contact</a>
+    </nav>
+  </header>
 
-a:link {
-color: #d62828;
-}
+  <main>
+    <div>
+      <!-- TODO: Add About section here -->
+      <article>
+        <div>
 
-a:hover {
-color: #f77f00;
-}
+          <h2>About</h2>
+          <h3>I'm Pete Thinkful</h3>
 
-article {
-  padding: 50px 0;
-}
+          <img class="image-circle" src="images/pete-thinkful.png" alt="Pete Thinkful">
 
-article div {
-  text-align: center;
-  width: 100%;
-}
+          <p>I'm an artist living in Denver, Colorado.</p>
+          <p>As an artist, I'm interested in:
 
-p {
-  line-height: 1.5;
-}
+<ul>
+            <li>Producing abstract art</li>
+            <li>Creating street graffiti art</li>
+            <li>Connecting with like-minded artists</li>
+</ul>
 
-/* The div container constrains the content width within the main container to 600px */
-div {
-  margin: auto;
-  width: 600px;
-}
+          <p>Please feel free to take a look at my website and feel free to <a href="#contact-me">contact me.</a></p>
 
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
+          <h3>Pete's Background</h3>
+          <p>After graduating college, I became an art teacher and worked with
+            beginners and professionals. I love art and my works have been
+            featured in major art galleries across the globe.</p>
 
-hr {
-  border: 1px solid black;
-}
+          <p>If you're looking to hire an artist or if you're an artist looking
+            for a collaborator for your next project, please reach out! I'm so
+            excited to work with other artists to create new art.
+          </p>
+        </div>
+      </article>
 
-/* Add your solution below */
+      <hr>
 
-.image-circle {
-  border-radius: 50%;
-  overflow: hidden;
-}
+      <!-- TODO: Add Portfolio section here -->
+      <article>
+        <div>
+          <h1>Portfolio</h1>
 
-footer {
-text-align: center;
-}
+          <h3>Abstract Red</h3>
 
-ul {
-  text-align: left;
-}
+          <img src="images/abstract-red.png" alt="Abstract Red">
 
-p {
-  text-align: left;
-}
+          <p>Vaporware wayfarers heirloom neutra disrupt. Activated charcoal
+            waistcoat scenester hell of.</p>
+
+        </div>
+        <div>
+          <h3>Spiral Zany</h3>
+          <img src="images/spiral-zany.png" alt="Spiral Zany">
+          <p>Sriracha portland taxidermy cronut messenger bag, vegan
+            distillery. Vaporware kickstarter air plant mumblecore food truck.</p>
+        </div>
+        <div>
+          <h3>Melted Rainbow</h3>
+          <img src="images/melted-rainbow.png" alt="Melted Rainbow">
+          <p>Edison bulb single-origin coffee snackwave, actually ennui
+          locavore shabby chic forage.</p>
+        </div>
+      </article>
+
+      <hr>
+
+      <!-- TODO: Add Contact section here -->
+
+      <h3 id="contact-me" align="center">Contact</h3>
+      <p>I'd love to hear from you! Please feel free to contact or follow me:</p>
+      <ol>
+        <li><a href="">LinkedIn</a></li>
+        <li><a href="">Instagram</a></li>
+        <li><a href="">Pinterest</a></li>
+      </ol>
+
+    </div>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <h4 align="center">© Pete Thinkful. All rights reserved.</h4>
+  </footer>
+</body>
+
+</html>

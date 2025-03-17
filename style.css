@@ -1,27 +1,47 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+
 body {
   background-color: #eae2b7;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
 }
 
+
 header {
-text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 600px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Set the font family for any h1, h2, or h3 heading */
-h1 {
-  text-align: center;
-}
+h1,
 h2,
 h3 {
-  text-align: center;
   font-family: "Playfair Display", Times, serif;
-}
-h4 {
-  text-align: center;
 }
 
 a:link {
@@ -78,4 +98,51 @@ ul {
 
 p {
   text-align: left;
+}
+
+/* About section styles */
+.about-content {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.pete-image {
+  flex: 0 0 200px;
+  margin-right: 30px;
+}
+
+.pete-intro {
+  flex: 1;
+  text-align: left;
+}
+
+.intro-heading {
+  text-align: center;
+  margin-top: 0;
+}
+
+.pete-background {
+  clear: both;
+}
+
+/* Portfolio section styles */
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.portfolio-item {
+  flex: 0 0 30%;
+  text-align: center;
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-description {
+  font-size: 14px;
+  text-align: center;
 }
